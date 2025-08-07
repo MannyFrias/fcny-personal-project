@@ -10,6 +10,7 @@
     <main>
       <header>
         <nav class="navbar">
+          <button class="hamburger" id="hamburger">&#9776;</button>
           <a href="#hero" class="logo"> My name is Manny! :)</a>
           <div class="nav-links">
             <a href="#hero">About</a>
@@ -139,5 +140,12 @@
         <p>Copyright (c) 2025 Author. All Rights Reserved.</p>
       </footer>
     </main>
+    <script>
+      const hamburger = document.getElementbyId("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
