@@ -12,7 +12,7 @@
         <nav class="navbar">
           <button class="hamburger" id="hamburger">&#9776;</button>
           <a href="#hero" class="logo"> My name is Manny! :)</a>
-          <div class="nav-links">
+          <div class="nav-links" class="nav-links">
             <a href="#hero">About</a>
             <a href="#projects">Projects</a>
             <a href="#links">Links</a>
@@ -141,7 +141,7 @@
       </footer>
     </main>
     <script>
-      const hamburger = document.getElementbyId("hamburger");
+      const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("open");
